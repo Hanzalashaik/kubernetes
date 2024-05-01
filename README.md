@@ -1,3 +1,5 @@
+##Commands
+
 ### 1.kubectl apply -f nginx-pod.yaml
 ### 2.kubectl get pods
 ### 3.kubectl get pods -l app=todo
