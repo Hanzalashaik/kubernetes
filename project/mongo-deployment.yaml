@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: mongo
-          image: mongo:latest
+          image: mongo:6.0
           ports:
             - containerPort: 27017
           env:
@@ -30,7 +30,6 @@ spec:
                 secretKeyRef:
                   name: mongo-secret
                   key: mongo-password
-
 ---
 apiVersion: v1
 kind: Service
@@ -41,5 +40,5 @@ spec:
     app: mongo
   ports:
     - protocol: TCP
-      port: 80
+      port: 27017
       targetPort: 27017
