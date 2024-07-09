@@ -1,0 +1,6 @@
+#spec is optional with a namespace
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: nginx
